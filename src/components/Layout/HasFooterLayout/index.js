@@ -1,6 +1,6 @@
 import Footer from '../components/Footer';
 
-function DefaultLayout({ children }) {
+function HasFooterLayout({ children }) {
     return (
         <div>
             <div className="main">{children}</div>
@@ -9,4 +9,4 @@ function DefaultLayout({ children }) {
     );
 }
 
-export default DefaultLayout;
+export default HasFooterLayout;

@@ -6,6 +6,7 @@ import History from '~/pages/History';
 import Products from '~/pages/Products';
 import Cart from '~/pages/Cart';
 import Login from '~/pages/Login';
+import Admin from '~/pages/Admin';
 
 // public
 const publicRoutes = [
@@ -14,6 +15,7 @@ const publicRoutes = [
     { path: '/history', component: History },
     { path: '/products', component: Products },
     { path: '/cart', component: Cart },
+    { path: '/admin', component: Admin },
     { path: '/login', component: Login, layout: HasFooterLayout },
 ];
 
