@@ -23,7 +23,8 @@ body {
     color: var(--text-color);
 }
 
-a {
+a,
+Link {
     color: inherit;
     text-decoration: none;
 }
@@ -34,6 +35,7 @@ button {
 }
 
 a,
+Link,
 img,
 button,
 input,

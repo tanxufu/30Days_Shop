@@ -7,6 +7,8 @@ import Products from '~/pages/Products';
 import Cart from '~/pages/Cart';
 import Login from '~/pages/Login';
 import Admin from '~/pages/Admin';
+import ForgotPassword from '~/pages/ForgotPassword';
+import Register from '~/pages/Register';
 
 // public
 const publicRoutes = [
@@ -17,6 +19,8 @@ const publicRoutes = [
     { path: '/cart', component: Cart },
     { path: '/admin', component: Admin },
     { path: '/login', component: Login, layout: HasFooterLayout },
+    { path: '/forgotpassword', component: ForgotPassword, layout: HasFooterLayout },
+    { path: '/register', component: Register, layout: HasFooterLayout },
 ];
 
 // private

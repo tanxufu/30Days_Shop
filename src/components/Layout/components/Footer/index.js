@@ -10,9 +10,9 @@ function Footer() {
         <footer className={cx('footer')}>
             <div className={cx('footer__inner')}>
                 <div className={cx('container')}>
-                    <a className={cx('logo')}>
-                        <h2 className={cx('logo__title')}>30 Days Shop</h2>
-                    </a>
+                    <Link to="/" className={cx('logo')}>
+                        <h1 className={cx('logo__title')}>30 Days Shop</h1>
+                    </Link>
                     <div className={cx('footer__info')}>
                         <div className={cx('row row-cols-3')}>
                             <div className={cx('col')}>

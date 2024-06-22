@@ -1,0 +1,73 @@
+.logo {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.topbar {
+    padding: 24px 0;
+    border-bottom: 1px solid #eee;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__act {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: auto;
+
+        &--icon {
+            display: block;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 64px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+
+    &__input {
+        width: 520px;
+        font-size: 1.8rem;
+
+        &::placeholder {
+            color: #aaa;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.log-in__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 48px;
+    background: #000;
+    padding: 12px 16px;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: opacity 0.15s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
