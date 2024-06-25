@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Footer from '~/components/Layout/components/Footer';
+import axios from 'axios';
 import classNames from 'classnames/bind';
 import styles from './Login.module.scss';
 
@@ -15,15 +15,19 @@ function Login() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        setError('');
 
         try {
-            const response = await fetch(
-                `https://localhost:7158/api/UsersHandle/Login?email=${email}&password=${password}`,
-            );
-            if (!response.ok) {
+            const response = await axios.post('https://localhost:7158/api/UsersHandle/login', {
+                email: email,
+                password: password,
+            });
+
+            if (response.status !== 200) {
                 throw new Error('Tài khoản không đúng!');
             }
-            const user = await response.json();
+
+            const user = response.data;
 
             if (user.typeAccount === 'ad') {
                 navigate('/admin');
@@ -41,7 +45,7 @@ function Login() {
         <div className={cx('container')}>
             <div className={cx('login')}>
                 <div className={cx('login__inner')}>
-                    <h1 className={cx('login__heading')}>WELLCOME</h1>
+                    <h1 className={cx('login__heading')}>WELCOME</h1>
                     <div className={cx('login__box', 'textbox')}>
                         <h2>Đăng nhập</h2>
                     </div>

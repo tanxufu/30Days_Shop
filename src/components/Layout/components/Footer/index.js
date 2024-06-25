@@ -1,7 +1,7 @@
 import styles from './Footer.module.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import images from '~/assets/images';
+import images from '~/assets/icon';
 
 const cx = classNames.bind(styles);
 
@@ -18,40 +18,40 @@ function Footer() {
                             <div className={cx('col')}>
                                 <ul className={cx('footer__list')}>
                                     <li>
-                                        <Link to="#!" className={cx('footer__link')}>
+                                        <Link to="/about" className={cx('footer__link')}>
                                             <span>Về chúng tôi</span>
                                             <img src={images.arrowRight} alt="arrowRight" />
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link to="/policy" className={cx('footer__link')}>
+                                            <span>Chính sách</span>
+                                            <img src={images.arrowRight} alt="arrowRight" />
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className={cx('col')}>
+                                <ul className={cx('footer__list')}>
                                     <li>
                                         <Link to="/products" className={cx('footer__link')}>
                                             <span>Sản phẩm</span>
                                             <img src={images.arrowRight} alt="arrowRight" />
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link to="/faq" className={cx('footer__link')}>
+                                            <span>FAQ</span>
+                                            <img src={images.arrowRight} alt="arrowRight" />
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div className={cx('col')}>
                                 <ul className={cx('footer__list')}>
-                                    <li>
-                                        <Link to="#!" className={cx('footer__link')}>
-                                            <span>Chính sách</span>
-                                            <img src={images.arrowRight} alt="arrowRight" />
-                                        </Link>
-                                    </li>
                                     <li>
                                         <Link to="#!" className={cx('footer__link')}>
                                             <span>Hồ sơ</span>
-                                            <img src={images.arrowRight} alt="arrowRight" />
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={cx('col')}>
-                                <ul className={cx('footer__list')}>
-                                    <li>
-                                        <Link to="#!" className={cx('footer__link')}>
-                                            <span>FAQ</span>
                                             <img src={images.arrowRight} alt="arrowRight" />
                                         </Link>
                                     </li>

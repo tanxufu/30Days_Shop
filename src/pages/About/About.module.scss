@@ -1,0 +1,64 @@
+.about {
+    padding: 60px 0;
+
+    &__heading {
+        font-size: 5rem;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+
+    &__inner {
+        margin-top: 40px;
+    }
+
+    &__sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+    }
+
+    &__link {
+        display: flex;
+        padding: 16px 16px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        width: 100%;
+        border-radius: 4px;
+
+        &--active {
+            font-weight: 500;
+            background: #f5f5f5;
+        }
+    }
+
+    &__info {
+        padding: 28px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+    }
+}
+
+.shopinfo {
+    &__text {
+        margin-top: 28px;
+    }
+
+    &__text:first-child {
+        margin-top: 0;
+    }
+
+    &__date {
+        font-size: 1.8rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    &__desc {
+        margin-top: 8px;
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}

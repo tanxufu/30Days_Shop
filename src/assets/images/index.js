@@ -1,10 +1,7 @@
-const images = {
-    arrowRight: require('~/assets/images/arrowRight.svg').default,
-    more: require('~/assets/images/more.svg').default,
-    cart: require('~/assets/images/cart.svg').default,
-    history: require('~/assets/images/history.svg').default,
-    favourite: require('~/assets/images/favourite.svg').default,
-    search: require('~/assets/images/search.svg').default,
+const image = {
+    banner: require('~/assets/images/banner.png'),
+    banner2: require('~/assets/images/banner2.jpg'),
+    banner3: require('~/assets/images/banner3.jpg'),
 };
 
-export default images;
+export default image;
